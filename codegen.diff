@@ -1,0 +1,10 @@
+--- baseline.s	2026-10-01 19:59:54.312725629 +0800
++++ candidate3.s	2026-10-01 19:59:54.312745427 +0800
+@@ -11,7 +11,6 @@
+ 	andi	a2, a2, 1
+ 	beqz	a2, .LBB0_2
+ # %bb.1:                                # %extract
+-	sext.w	a1, a1
+ 	bext	a0, a0, a1
+ 	ret
+ .LBB0_2:                                # %other
